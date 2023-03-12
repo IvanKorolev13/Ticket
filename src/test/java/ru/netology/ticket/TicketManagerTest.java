@@ -52,4 +52,12 @@ class TicketManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
+    @Test
+    public void toFindFewExistTicketSortForFast(){
+        Ticket[] expected = {ticket5, ticket6, ticket1, ticket8, ticket3};
+        Ticket[] actual = manager.findAll("DME", "KZN", manager.timeComparator);
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
 }
