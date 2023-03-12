@@ -1,4 +1,7 @@
 package ru.netology.ticket;
+
+import java.util.Comparator;
+
 public class TicketRepository {
     Ticket[] ticket = new Ticket[0];
 
